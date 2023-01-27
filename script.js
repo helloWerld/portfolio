@@ -1,9 +1,15 @@
 //NavBar Close After Opened
-const navBar = document.querySelector(".nav-collapse-btn");
-navBar.addEventListener("click", () => {
-    console.log('click');
-    document.getElementById('navbarNav').style.display = 'hide';
-});
+// const navBar = document.querySelector(".nav-collapse-btn");
+// navBar.addEventListener("click", () => {
+//     const expanded = document.querySelector(".navbar-toggler").getAttribute("aria-expanded");
+//     console.log(expanded);
+//     if (expanded) {
+//         document.querySelector("#navbarNav").style.display = 'none';
+//     }
+// });
+
+// DIV Slide Animations
+
 
 //Open Education Information
 const viewEduc = document.querySelector('.view-educ');
@@ -17,7 +23,6 @@ viewEduc.addEventListener('click', () => {
         viewEduc.innerText = 'Hide My Education';
     }
 });
-
 
 //Contact Me
 function sendEmail() {

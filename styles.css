@@ -6,6 +6,10 @@ body {
     background-color: #151515;
 }
 
+.init-hidden {
+    visibility: hidden;
+}
+
 .nav-collapse-btn {
     background-color: white;
     border-radius: 5px;
@@ -74,6 +78,12 @@ body {
     background-repeat: no-repeat;
     background-position: 90%;
 }
+
+@media (max-width: 1200px) {
+    #contact {
+      background-image: none !important;
+    }
+  }
 
 .no-deco {
     text-decoration: none;

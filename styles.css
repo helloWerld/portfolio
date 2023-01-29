@@ -23,13 +23,25 @@ body {
     color: #dc3545 !important;
 }
 
+
 .hero-row {
-    width: 100vw;
     height: 100vh;
+    min-width: 100vw !important;
     background: url("./images/full-stack-web-developer.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (max-width: 1200px) {
+    .hero-row {
+        height: 100vh;
+        min-width: 100vw !important;
+        background: url("./images/full-stack-web-developer-sm.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .hero-text {
@@ -53,8 +65,8 @@ body {
 }
 
 .skills-img {
-    max-width: 200px;
-    min-width: 150px;
+    max-width: 150px;
+    min-width: 100px;
     display: flex;
     justify-content: center;
 }
@@ -83,7 +95,7 @@ body {
     #contact {
       background-image: none !important;
     }
-  }
+}
 
 .no-deco {
     text-decoration: none;

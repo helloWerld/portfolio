@@ -1,14 +1,5 @@
-//NavBar Close After Opened
-// const navBar = document.querySelector(".nav-collapse-btn");
-// navBar.addEventListener("click", () => {
-//     const expanded = document.querySelector(".navbar-toggler").getAttribute("aria-expanded");
-//     console.log(expanded);
-//     if (expanded) {
-//         document.querySelector("#navbarNav").style.display = 'none';
-//     }
-// });
 
-// DIV Slide Animations
+// TODO: DIV Slide Animations
 
 
 //Open Education Information
@@ -27,12 +18,12 @@ viewEduc.addEventListener('click', () => {
 //Contact Me
 function sendEmail() {
     console.log('clicked');
-    location.href = "mailto:trzruss@me.com";
+    window.location.href = "mailto:trzruss@me.com";
 }
 
 function callPhone() {
     console.log('clicked');
-    location.href = "tel:+1-609-217-2562";
+    window.location.href = "tel:+1-609-217-2562";
 }
 
 //Email Button

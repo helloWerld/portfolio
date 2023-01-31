@@ -40,24 +40,53 @@ body {
     font-family: 'Caveat', cursive;
 }
 
-
 /* NAVBAR & HERO */
-@media (min-width: 2200px){
-    .hero-row {
-        height: 95vh !important;
-    }
+.hero-container {
+    height: 100vh !important;
+    position:relative;
 }
-@media (min-width: 1200px) and (max-width: 2200px){
-    .hero-row {
-        height: 75vh !important;
+
+@media (min-width: 1200px){
+    .desk-vid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
-}
-@media screen and (max-width: 1200px){
-    .hero-row {
-        height: 50vh !important;
+    
+    .mob-vid {
+        display: none;
     }
 }
 
+@media (max-width: 1200px){
+    .mob-vid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .desk-vid {
+        display: none;
+    }
+}
 
 .nav-collapse-btn {
     background-color: white;
@@ -74,40 +103,6 @@ body {
 
 .rt:hover {
     color: #dc3545 !important;
-}
-
-.hero-vid {
-    position: relative;
-}
-
-@media (min-width: 1200px) {
-    .desk-vid {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        z-index:-1;
-        transform: translateX(-50%) translateY(-15%);
-    }
-    .mob-vid {
-        display: none;
-    }
-}
-
-@media (max-width: 1200px) {
-    .mob-vid {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        z-index:-1;
-        transform: translateX(-50%) translateY(-15%);
-    }
-    .desk-vid {
-        display: none;
-    }
 }
 
 /* ABOUT */

@@ -65,7 +65,7 @@ function portfolioClick(appName) {
 //Resume Link Click
 const resume = document.querySelector('.resume');
 resume.addEventListener('click', () => {
-    window.open("/Russell Trzaska - Software Web Developer", '_blank');
+    window.open("./Russell_Trzaska_Web_Developer.pdf", '_blank');
 });
 
 //LinkedIn Link Click

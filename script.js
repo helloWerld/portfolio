@@ -23,7 +23,7 @@ function sendEmail() {
 
 function callPhone() {
     console.log('clicked');
-    window.location.href = "tel:+1-609-217-2562";
+    window.location.href = "tel:6092172562";
 }
 
 //Email Button
@@ -39,7 +39,7 @@ emailBtn.addEventListener("mouseout", () => {
 //Phone Button
 const phoneBtn = document.getElementById("phone-btn");
 phoneBtn.addEventListener("mouseover", () => {
-    phoneBtn.innerText = "+1-609-217-2562";
+    phoneBtn.innerText = "609-217-2562";
 });
 
 phoneBtn.addEventListener("mouseout", () => {
@@ -50,7 +50,7 @@ phoneBtn.addEventListener("mouseout", () => {
 let portfolio = {
     "placeholder": "https://github.com/helloWerld",
     "weatherApp": "https://github.com/helloWerld/CurrentWeather",
-    "clickPromo": "https://google.com",
+    "clickPromo": "https://github.com/helloWerld/click-promo",
     "colorCasino": "https://github.com/helloWerld/colorcasino",
     "codeGen": "https://github.com/helloWerld/codegen",
     "viralVideos": "https://github.com/helloWerld/viralvideos",
@@ -65,7 +65,7 @@ function portfolioClick(appName) {
 //Resume Link Click
 const resume = document.querySelector('.resume');
 resume.addEventListener('click', () => {
-    window.open("/Russell Trzaska - React Developer.pdf", '_blank');
+    window.open("/Russell Trzaska - Software Web Developer", '_blank');
 });
 
 //LinkedIn Link Click

@@ -1,74 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
+/* GENERAL */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #151515;
-}
-
-.init-hidden {
-    visibility: hidden;
-}
-
-.nav-collapse-btn {
-    background-color: white;
-    border-radius: 5px;
-}
-
-.rt, .cta, .hello, .subtext {
-    font-family: 'Caveat', cursive;
-}
-
-.rt:hover {
-    color: #dc3545 !important;
-}
-
-
-.hero-row {
-    height: 100vh;
-    min-width: 100vw !important;
-    background: url("./images/full-stack-web-developer.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media (max-width: 1200px) {
-    .hero-row {
-        height: 100vh;
-        min-width: 100vw !important;
-        background: url("./images/full-stack-web-developer-sm.gif");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.hero-text {
-    text-shadow: 2px 2px 20px black, 0 0 0.15em black,  0 0 0.2em black, 0 0 0.25em black;
-}
-
-.navbar-row {
-    background-color: transparent;
-}
-
-.nav-link:hover {
-    color: #dc3545 !important;
-}
-
-.rt-img {
-    max-height: 700px;
-}
-
-.skills {
-    background-color: black;
-}
-
-.skills-img {
-    max-width: 150px;
-    min-width: 100px;
-    display: flex;
-    justify-content: center;
 }
 
 .bold {
@@ -79,30 +12,12 @@ body {
     color: gray !important;
 }
 
-.education {
-    display: none;
+.init-hidden {
+    visibility: hidden;
 }
 
-#contact {
-    background-color: black;
-    background-image: url('./images/rt6.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 90%;
-}
-
-@media (max-width: 1200px) {
-    #contact {
-      background-image: none !important;
-    }
-}
-
-.no-deco {
-    text-decoration: none;
-}
-
-.no-deco:hover {
-    text-decoration: underline;
+.contact-btn {
+    width: 250px !important;
 }
 
 .btn:hover {
@@ -119,12 +34,107 @@ body {
     left: 1px;
 }
 
-.resume:hover, .linkedin:hover, .github:hover {
-    cursor: pointer;
-    border-top: 2px solid white;
-    background-color: #dc3545 !important;
-    color: black !important;
+
+/* FONTS */
+.rt, .cta, .hello, .subtext {
+    font-family: 'Caveat', cursive;
 }
+
+
+/* NAVBAR & HERO */
+@media (min-width: 2200px){
+    .hero-row {
+        height: 95vh !important;
+    }
+}
+@media (min-width: 1200px) and (max-width: 2200px){
+    .hero-row {
+        height: 75vh !important;
+    }
+}
+@media screen and (max-width: 1200px){
+    .hero-row {
+        height: 50vh !important;
+    }
+}
+
+
+.nav-collapse-btn {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.navbar-row {
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    color: #dc3545 !important;
+}
+
+.rt:hover {
+    color: #dc3545 !important;
+}
+
+.hero-vid {
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .desk-vid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:-1;
+        transform: translateX(-50%) translateY(-15%);
+    }
+    .mob-vid {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mob-vid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:-1;
+        transform: translateX(-50%) translateY(-15%);
+    }
+    .desk-vid {
+        display: none;
+    }
+}
+
+/* ABOUT */
+.rt-img {
+    max-height: 700px;
+}
+
+
+/* EDUCATION */
+.education {
+    display: none;
+}
+
+
+/* SKILLS */
+.skills {
+    background-color: black;
+}
+
+.skills-img {
+    max-width: 150px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .project-img {
     box-shadow: 2px 2px 1px white;
@@ -140,42 +150,86 @@ body {
     border: 3px solid black;
     border-radius: 10px;
 }
-
-.place-holder:hover {
-    content: url("./images/coming-soon.png");
-}
-
-.weather-app:hover {
-    content: url("./images/weather-ext2.png");
-}
-
-.click-promo:hover {
-    content: url("./images/click-promo2.png");
-}
-
-.color-casino:hover {
-    content: url("./images/color-casino2.png");
-}
-
-.code-gen:hover {
-    content: url("./images/code-gen2.png");
-}
-
-.viral-videos:hover {
-    content: url("./images/viral-videos2.png");
-}
-
-.turdle:hover {
-    content: url("./images/turdle2.png");
-}
-
-.coin-genie:hover {
-    content: url("./images/coin-genie2.png");
-}
-
 .project-img:active {
     position: relative;
     top: 4px;
     box-shadow: none;
     left: 4px;
+}
+
+@media (max-width: 1200px) {
+    .place-holder {
+        content: url("./images/coming-soon.png");
+    }
+    .weather-app {
+        content: url("./images/weather-ext2.png");
+    }
+    .click-promo {
+        content: url("./images/click-promo2.png");
+    }
+    .color-casino {
+        content: url("./images/color-casino2.png");
+    }
+    .code-gen {
+        content: url("./images/code-gen2.png");
+    }
+    .viral-videos {
+        content: url("./images/viral-videos2.png");
+    }
+    .turdle {
+        content: url("./images/turdle2.png");
+    }
+    .coin-genie {
+        content: url("./images/coin-genie2.png");
+    }
+}
+
+@media (min-width: 1200px) {
+    .place-holder:hover {
+        content: url("./images/coming-soon.png");
+    }
+    .weather-app:hover {
+        content: url("./images/weather-ext2.png");
+    }
+    .click-promo:hover {
+        content: url("./images/click-promo2.png");
+    }
+    .color-casino:hover {
+        content: url("./images/color-casino2.png");
+    }
+    .code-gen:hover {
+        content: url("./images/code-gen2.png");
+    }
+    .viral-videos:hover {
+        content: url("./images/viral-videos2.png");
+    }
+    .turdle:hover {
+        content: url("./images/turdle2.png");
+    }
+    .coin-genie:hover {
+        content: url("./images/coin-genie2.png");
+    }
+}
+
+
+/* CONTACT */
+#contact {
+    background-color: black;
+    background-image: url('./images/rt6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+@media (max-width: 1200px) {
+    #contact {
+      background-image: none !important;
+    }
+}
+
+.resume:hover, .linkedin:hover, .github:hover {
+    cursor: pointer;
+    border-top: 2px solid white;
+    background-color: #dc3545 !important;
+    color: black !important;
 }

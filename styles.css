@@ -1,7 +1,22 @@
 /* GENERAL */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #151515;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #dc3545;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: white;
 }
 
 .bold {
@@ -33,6 +48,8 @@ body {
     box-shadow: none;
     left: 1px;
 }
+
+
 
 
 /* FONTS */
@@ -177,6 +194,9 @@ body {
     .coin-genie {
         content: url("./images/coin-genie2.png");
     }
+    .calc {
+        content: url("./images/calc2.png");
+    }
 }
 
 @media (min-width: 1200px) {
@@ -203,6 +223,9 @@ body {
     }
     .coin-genie:hover {
         content: url("./images/coin-genie2.png");
+    }
+    .calc:hover {
+        content: url("./images/calc2.png");
     }
 }
 

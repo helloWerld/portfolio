@@ -55,7 +55,8 @@ let portfolio = {
     "codeGen": "https://github.com/helloWerld/codegen",
     "viralVideos": "https://github.com/helloWerld/viralvideos",
     "turtle": "https://github.com/helloWerld/turdle",
-    "coinGenie": "https://github.com/dannynow6/Team_Project_WebDev"
+    "coinGenie": "https://github.com/dannynow6/Team_Project_WebDev",
+    "calc": "https://github.com/helloWerld/calculator"
 };
 
 function portfolioClick(appName) {
